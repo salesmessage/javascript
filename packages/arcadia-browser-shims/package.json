@@ -32,6 +32,6 @@
     "raf": "^3.4.0",
     "ric-shim": "^1.0.0",
     "smoothscroll-polyfill": "^0.4.3",
-    "whatwg-fetch": "^2.0.4"
+    "whatwg-fetch": "^3.0.0"
   }
 }
