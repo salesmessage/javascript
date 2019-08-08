@@ -1,0 +1,28 @@
+{
+  "name": "prettier-config-arcadia",
+  "version": "0.0.0",
+  "description": "Arcadia's base Prettier config, following our code conventions",
+  "keywords": [
+    "prettier",
+    "config",
+    "arcadia",
+    "javascript"
+  ],
+  "author": "Andrew Ellis <andrew@salesmessage.com>",
+  "homepage": "https://github.com/salesmessage/javascript/tree/latest/packages/prettier-config-arcadia#readme",
+  "license": "MIT",
+  "main": "lib/prettier-config-arcadia.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salesmessage/javascript.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  }
+}

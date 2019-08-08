@@ -1,0 +1,48 @@
+{
+  "name": "eslint-plugin-arcadia",
+  "version": "0.0.0",
+  "description": "Arcadia's ESLint config bundled into a \"zero-conf\" plugin",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslintplugin",
+    "eslint-plugin",
+    "arcadia",
+    "javascript",
+    "code conventions"
+  ],
+  "author": "Andrew Ellis <andrew@salesmessage.com>",
+  "homepage": "https://github.com/salesmessage/javascript/tree/latest/packages/eslint-plugin-arcadia#readme",
+  "license": "MIT",
+  "main": "lib/eslint-plugin-arcadia.js",
+  "files": [
+    "lib",
+    "prettier.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salesmessage/javascript.git"
+  },
+  "scripts": {
+    "prepare": "node ./lib/render-configs.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 5.0.0",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint-config-arcadia": "file:../eslint-config-arcadia",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "prettier-config-arcadia": "file:../prettier-config-arcadia"
+  }
+}

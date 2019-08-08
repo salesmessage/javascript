@@ -1,0 +1,21 @@
+{
+  "command": {
+    "create": {
+      "license": "MIT"
+    },
+    "publish": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "message": "chore(release): Publish"
+    }
+  },
+  "ignoreChanges": [
+    "**/test/**",
+    "**/*.md"
+  ],
+  "loglevel": "success",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent"
+}

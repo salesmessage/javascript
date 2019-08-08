@@ -1,0 +1,80 @@
+{
+  "name": "arcadia-style",
+  "version": "0.0.0-monorepo",
+  "private": true,
+  "description": "A mostly reasonable approach to JavaScript.",
+  "scripts": {
+    "check:prettier:parser": "prettier --debug-check --ignore-path ./.gitignore 'packages/**/*.@(js|md)'",
+    "lint": "npm-run-all --silent lint:*",
+    "lint:js": "eslint ./packages --cache --cache-location ./node_modules/.cache/eslint --report-unused-disable-directives",
+    "lint:js:fix": "eslint ./packages --cache --cache-location ./node_modules/.cache/eslint --fix",
+    "lint:md": "markdownlint README.md */README.md packages/*/README.md",
+    "lint:rules": "npm-run-all --silent --print-label lint:rules:*",
+    "lint:rules:base": "eslint-find-rules --unused packages/eslint-config-arcadia-base/index.js",
+    "lint:rules:jest": "eslint-find-rules --unused packages/eslint-config-arcadia-base/jest.js --no-core",
+    "lint:rules:main": "eslint-find-rules --unused packages/eslint-config-arcadia/index.js",
+    "lint:rules:mocha": "eslint-find-rules --unused packages/eslint-config-arcadia-base/mocha.js --no-core",
+    "lint:prettier": "eslint --print-config packages/eslint-config-arcadia/index.js | eslint-config-prettier-check",
+    "pretest": "lerna run prepare --loglevel error && npm run --silent lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prerelease": "npm test",
+    "release": "lerna publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salesmessage/javascript.git"
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "arcadia",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/salesmessage/javascript",
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/packages/**/test/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-find-rules": "^3.3.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "jest": "^24.8.0",
+    "lerna": "^3.16.4",
+    "markdownlint-cli": "^0.15.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "dependencies": {
+    "babel-preset-arcadia": "file:packages/babel-preset-arcadia",
+    "eslint-config-arcadia": "file:packages/eslint-config-arcadia",
+    "eslint-config-arcadia-base": "file:packages/eslint-config-arcadia-base",
+    "eslint-plugin-arcadia": "file:packages/eslint-plugin-arcadia",
+    "prettier-config-arcadia": "file:packages/prettier-config-arcadia",
+    "arcadia-browser-shims": "file:packages/arcadia-browser-shims",
+    "arcadia-js-shims": "file:packages/arcadia-js-shims"
+  }
+}

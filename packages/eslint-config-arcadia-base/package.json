@@ -1,0 +1,46 @@
+{
+  "name": "eslint-config-arcadia-base",
+  "version": "0.0.0",
+  "description": "Arcadia's base ESLint config, following our code conventions",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "jest.js",
+    "mocha.js",
+    "prettier.config.js",
+    "rules"
+  ],
+  "scripts": {
+    "test": "echo \"Run tests from root\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salesmessage/javascript"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "arcadia",
+    "javascript",
+    "code conventions"
+  ],
+  "author": "Andrew Ellis <andrew@salesmessage.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/salesmessage/javascript/tree/latest/packages/eslint-config-arcadia-base#readme",
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 5.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.6",
+    "prettier-config-arcadia": "file:../prettier-config-arcadia"
+  }
+}

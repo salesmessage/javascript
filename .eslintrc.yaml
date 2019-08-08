@@ -1,0 +1,21 @@
+---
+  root: true
+  extends:
+    - arcadia-base
+    - plugin:jest/recommended
+  plugins:
+    - jest
+  env:
+    jest/globals: false
+  rules:
+    strict: "off"
+  overrides:
+    - files: "**/test/**"
+      env:
+        jest/globals: true
+    - files: "packages/arcadia-browser-shims/document-contains.js"
+      rules:
+        func-name-matching: "off"
+    - files: "packages/babel-preset-arcadia/index.js"
+      rules:
+        prefer-object-spread: "off"
