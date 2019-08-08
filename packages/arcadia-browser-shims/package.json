@@ -28,7 +28,7 @@
   "dependencies": {
     "arcadia-js-shims": "file:../arcadia-js-shims",
     "classlist-polyfill": "^1.2.0",
-    "element-closest": "^2.0.2",
+    "element-closest": "^3.0.1",
     "raf": "^3.4.0",
     "ric-shim": "^1.0.0",
     "smoothscroll-polyfill": "^0.4.3",
