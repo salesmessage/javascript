@@ -11,7 +11,7 @@ module.exports = {
     'mocha/handle-done-callback': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/max-top-level-suites.md
-    'mocha/max-top-level-suites': 'off',
+    'mocha/max-top-level-suites': ['error', { limit: 1 }],
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-async-describe.md
     'mocha/no-async-describe': 'error',
@@ -20,10 +20,10 @@ module.exports = {
     'mocha/no-exclusive-tests': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-global-tests.md
-    'mocha/no-global-tests': 'off',
+    'mocha/no-global-tests': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-hooks-for-single-case.md
-    'mocha/no-hooks-for-single-case': 'off',
+    'mocha/no-hooks-for-single-case': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-hooks.md
     'mocha/no-hooks': 'off',
@@ -38,25 +38,25 @@ module.exports = {
     'mocha/no-nested-tests': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-pending-tests.md
-    'mocha/no-pending-tests': 'warn',
+    'mocha/no-pending-tests': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
     'mocha/no-return-and-callback': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-setup-in-describe.md
-    'mocha/no-setup-in-describe': 'off',
+    'mocha/no-setup-in-describe': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-sibling-hooks.md
-    'mocha/no-sibling-hooks': 'off',
+    'mocha/no-sibling-hooks': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-skipped-tests.md
-    'mocha/no-skipped-tests': 'warn',
+    'mocha/no-skipped-tests': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-synchronous-tests.md
-    'mocha/no-synchronous-tests': 'off',
+    'mocha/no-synchronous-tests': 'warn',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-top-level-hooks.md
-    'mocha/no-top-level-hooks': 'off',
+    'mocha/no-top-level-hooks': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/prefer-arrow-callback.md
     'mocha/prefer-arrow-callback': ['error', {
@@ -65,9 +65,9 @@ module.exports = {
     }],
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/valid-suite-description.md
-    'mocha/valid-suite-description': 'off',
+    'mocha/valid-suite-description': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/valid-test-description.md
-    'mocha/valid-test-description': 'off',
+    'mocha/valid-test-description': 'warn',
   },
 };

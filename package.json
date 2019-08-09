@@ -48,6 +48,8 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^5.16.0",
@@ -59,8 +61,10 @@
     "eslint-plugin-mocha": "^5.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.3",
     "jest": "^24.8.0",
     "lerna": "^3.16.4",
+    "lint-staged": "^9.2.1",
     "markdownlint-cli": "^0.17.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
@@ -76,5 +80,21 @@
     "prettier-config-arcadia": "file:packages/prettier-config-arcadia",
     "arcadia-browser-shims": "file:packages/arcadia-browser-shims",
     "arcadia-js-shims": "file:packages/arcadia-js-shims"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm t"
+    ]
   }
 }

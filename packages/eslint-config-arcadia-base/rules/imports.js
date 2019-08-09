@@ -45,7 +45,7 @@ module.exports = {
     'import/default': 'off',
 
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
-    'import/namespace': 'off',
+    'import/namespace': ['error', { allowComputed: true }],
 
     // Helpful warnings:
 
@@ -148,9 +148,8 @@ module.exports = {
 
     // Enforce a convention in module import order
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-    // TODO: enable?
-    'import/order': ['off', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+    'import/order': ['error', {
+      groups: [['index', 'sibling', 'parent', 'internal', 'external', 'builtin']],
       'newlines-between': 'never',
     }],
 

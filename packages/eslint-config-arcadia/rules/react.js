@@ -78,14 +78,14 @@ module.exports = {
 
     // Enforce event handler naming conventions in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-    'react/jsx-handler-names': ['off', {
+    'react/jsx-handler-names': ['error', {
       eventHandlerPrefix: 'handle',
       eventHandlerPropPrefix: 'on',
     }],
 
     // Validate props indentation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
-    'react/jsx-indent-props': ['off'/* prettier */, 4],
+    'react/jsx-indent-props': ['off'/* prettier */, 2],
 
     // Validate JSX has key prop when in array or iterator
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
@@ -163,7 +163,7 @@ module.exports = {
 
     // Prevent usage of dangerous JSX properties
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
-    'react/no-danger': 'warn',
+    'react/no-danger': 'error',
 
     // Prevent usage of deprecated methods
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
@@ -184,7 +184,7 @@ module.exports = {
 
     // Prevent direct mutation of this.state
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
-    'react/no-direct-mutation-state': 'off',
+    'react/no-direct-mutation-state': 'error',
 
     // Prevent usage of isMounted
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
@@ -310,7 +310,7 @@ module.exports = {
 
     // Enforce JSX indentation
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-    'react/jsx-indent': ['off'/* prettier */, 4],
+    'react/jsx-indent': ['off'/* prettier */, 2],
 
     // Disallow target="_blank" on links
     // https://github.com/yannickcr/eslint-plugin-react/blob/ac102885765be5ff37847a871f239c6703e1c7cc/docs/rules/jsx-no-target-blank.md
@@ -492,7 +492,7 @@ module.exports = {
 
     // Verify dependencies of React Hooks
     // https://github.com/facebook/react/issues/14920
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'error',
   },
 
   settings: {

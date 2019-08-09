@@ -53,19 +53,10 @@ describe('eslint-plugin-arcadia', () => {
       recommended: {
         parser: expect.stringContaining('babel-eslint'),
         rules: {
-          'arcadia/react/jsx-indent': ['off', 4],
+          'arcadia/react/jsx-indent': ['off', 2],
           'max-len': ['warn', 100, 4, { ignoreComments: false }],
           'arcadia/import/prefer-default-export': 'error',
-          'arcadia/jsx-a11y/label-has-for': [
-            'error',
-            {
-              components: [],
-              required: {
-                every: ['nesting', 'id'],
-              },
-              allowChildren: false,
-            },
-          ],
+          'arcadia/jsx-a11y/label-has-for': 'off',
         },
       },
     });

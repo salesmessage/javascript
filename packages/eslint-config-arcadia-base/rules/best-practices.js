@@ -48,7 +48,7 @@ module.exports = {
     'max-classes-per-file': ['error', 1],
 
     // disallow the use of alert, confirm, and prompt
-    'no-alert': 'warn',
+    'no-alert': 'error',
 
     // disallow use of arguments.caller or arguments.callee
     'no-caller': 'error',
