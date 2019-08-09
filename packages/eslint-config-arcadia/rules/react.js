@@ -149,7 +149,7 @@ module.exports = {
 
     // Enforce defaultProps declarations alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-sort-default-props.md
-    'react/jsx-sort-default-props': ['off', {
+    'react/jsx-sort-default-props': ['error', {
       ignoreCase: true,
     }],
 
