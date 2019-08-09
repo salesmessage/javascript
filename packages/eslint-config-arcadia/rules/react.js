@@ -126,7 +126,7 @@ module.exports = {
 
     // Enforce propTypes declarations alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
-    'react/sort-prop-types': ['off', {
+    'react/sort-prop-types': ['error', {
       ignoreCase: true,
       callbacksLast: false,
       requiredFirst: false,
@@ -138,7 +138,7 @@ module.exports = {
 
     // Enforce props alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-    'react/jsx-sort-props': ['off', {
+    'react/jsx-sort-props': ['error', {
       ignoreCase: true,
       callbacksLast: false,
       shorthandFirst: false,
