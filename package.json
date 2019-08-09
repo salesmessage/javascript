@@ -19,7 +19,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prerelease": "npm test",
-    "release": "lerna publish"
+    "release": "lerna publish --conventional-commits"
   },
   "repository": {
     "type": "git",
