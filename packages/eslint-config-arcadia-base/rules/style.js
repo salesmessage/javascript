@@ -80,7 +80,7 @@ module.exports = {
     'computed-property-spacing': ['off'/* prettier */, 'never'],
 
     // enforces consistent naming when capturing the current execution context
-    'consistent-this': 'off',
+    'consistent-this': ['error', 'self'],
 
     // enforce newline at the end of file, with no multiple empty lines
     'eol-last': ['off'/* prettier */, 'always'],

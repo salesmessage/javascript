@@ -1,9 +1,8 @@
 /* eslint prettier/prettier: off */
-
 import { CLIEngine } from 'eslint';
-import eslintrc from '..';
 import reactRules from '../rules/react';
 import reactA11yRules from '../rules/react-a11y';
+import eslintrc from '..';
 
 const cli = new CLIEngine({
   useEslintrc: false,

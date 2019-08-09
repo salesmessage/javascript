@@ -50,23 +50,11 @@ module.exports = {
 
     // require that JSX labels use "htmlFor"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-    'jsx-a11y/label-has-for': ['error', {
-      components: [],
-      required: {
-        every: ['nesting', 'id'],
-      },
-      allowChildren: false,
-    }],
+    'jsx-a11y/label-has-for': 'off',
 
     // Enforce that a label tag has a text label and an associated control.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/b800f40a2a69ad48015ae9226fbe879f946757ed/docs/rules/label-has-associated-control.md
-    'jsx-a11y/label-has-associated-control': ['error', {
-      labelComponents: [],
-      labelAttributes: [],
-      controlComponents: [],
-      assert: 'both',
-      depth: 25
-    }],
+    'jsx-a11y/label-has-associated-control': 'off',
 
     // Enforce that a control (an interactive element) has a text label.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/56506740f826433bd498be14a7ec1aff94753ace/docs/rules/control-has-associated-label.md
