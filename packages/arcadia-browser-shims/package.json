@@ -1,6 +1,6 @@
 {
   "name": "arcadia-browser-shims",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Browser and JS shims used by Arcadia",
   "main": "arcadia-browser-shims.js",
   "files": [
