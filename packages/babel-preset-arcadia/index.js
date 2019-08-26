@@ -52,7 +52,6 @@ module.exports = declare((api, options) => {
   const debug = typeof options.debug === 'boolean' ? options.debug : false;
   const development =
     typeof options.development === 'boolean' ? options.development : env === 'development';
-  const production = !development && env === 'production';
 
   // we assume that those opting into node env know what they're doing,
   // and don't need a significant number of plugins or exclusions
@@ -78,21 +77,6 @@ module.exports = declare((api, options) => {
       [require('@babel/preset-react'), { development }],
     ],
     plugins: [
-      [
-        // this plugin _always_ needs to be loaded first
-        require('babel-plugin-styled-components'),
-        production
-          ? {
-              // help bundlers tree-shake
-              pure: true,
-              // remove dev-mode noise
-              displayName: false,
-            }
-          : {
-              // use defaults
-            },
-      ],
-
       require('@babel/plugin-syntax-dynamic-import'),
       // TODO: Remove env test when Jest supports dynamic import() "natively"
       isNode || env === 'test' ? require('babel-plugin-dynamic-import-node') : null,
