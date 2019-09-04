@@ -110,6 +110,10 @@ module.exports = {
     // https://eslint.org/docs/rules/function-paren-newline
     'function-paren-newline': ['off'/* prettier */, 'multiline'],
 
+    // enforce line breaks between arguments of a function call
+    // https://eslint.org/docs/rules/function-call-argument-newline
+    'function-call-argument-newline': ['off'/* prettier */, 'always'],
+
     // Blacklist certain identifiers to prevent them being used
     // https://eslint.org/docs/rules/id-blacklist
     'id-blacklist': 'off',
