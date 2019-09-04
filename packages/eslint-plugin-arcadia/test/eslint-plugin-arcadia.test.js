@@ -18,13 +18,10 @@ describe('eslint-plugin-arcadia', () => {
               '**/__mocks__/**/*.js',
               '**/test/**/*.js',
             ],
-            globals: {
-              it: false,
-              jest: false,
-            },
+            globals: {},
             plugins: ['arcadia'],
             rules: {
-              'arcadia/jest/no-focused-tests': 'error',
+              'arcadia/jest/no-focused-tests': ['error'],
             },
           },
         ],
@@ -37,15 +34,12 @@ describe('eslint-plugin-arcadia', () => {
               '**/*-test.js',
               '**/test/**/*.js',
             ],
-            globals: {
-              it: false,
-              mocha: false,
-            },
+            globals: {},
             plugins: ['arcadia'],
             rules: {
-              'arcadia/mocha/no-exclusive-tests': 'error',
-              'prefer-arrow-callback': 'off',
-              'func-names': 'off',
+              'arcadia/mocha/no-exclusive-tests': ['error'],
+              'prefer-arrow-callback': ['off'],
+              'func-names': ['off'],
             },
           },
         ],
@@ -55,8 +49,8 @@ describe('eslint-plugin-arcadia', () => {
         rules: {
           'arcadia/react/jsx-indent': ['off', 2],
           'max-len': ['warn', 100, 4, { ignoreComments: false }],
-          'arcadia/import/prefer-default-export': 'error',
-          'arcadia/jsx-a11y/label-has-for': 'off',
+          'arcadia/import/prefer-default-export': ['error'],
+          'arcadia/jsx-a11y/label-has-for': ['off'],
         },
       },
     });
