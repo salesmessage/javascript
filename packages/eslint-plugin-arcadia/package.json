@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-arcadia",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Arcadia's ESLint config bundled into a \"zero-conf\" plugin",
   "keywords": [
     "eslint",
