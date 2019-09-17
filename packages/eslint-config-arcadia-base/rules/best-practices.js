@@ -29,6 +29,10 @@ module.exports = {
     // require default case in switch statements
     'default-case': ['error', { commentPattern: '^no default$' }],
 
+    // enforce default parameters to be last
+    // https://eslint.org/docs/rules/default-param-last
+    'default-param-last': ['error'],
+
     // encourages use of dot notation whenever possible
     'dot-notation': ['error', { allowKeywords: true }],
 
@@ -122,6 +126,10 @@ module.exports = {
 
     // disallow use of eval()-like methods
     'no-implied-eval': 'error',
+
+    // disallow assigning to imported bindings
+    // https://eslint.org/docs/rules/no-import-assign
+    'no-import-assign': 'error',
 
     // disallow this keywords outside of classes or class-like objects
     'no-invalid-this': 'off',
@@ -320,6 +328,10 @@ module.exports = {
     // Suggest using named capture group in regular expression
     // https://eslint.org/docs/rules/prefer-named-capture-group
     'prefer-named-capture-group': 'off',
+
+    // Disallow use of the RegExp constructor in favor of regular expression literals
+    // https://eslint.org/docs/rules/prefer-regex-literals
+    'prefer-regex-literals': 'error',
 
     // require use of the second argument for parseInt()
     radix: 'error',
