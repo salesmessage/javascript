@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-arcadia",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Arcadia's base Prettier config, following our code conventions",
   "keywords": [
     "prettier",

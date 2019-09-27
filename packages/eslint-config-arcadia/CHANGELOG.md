@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.1.0...eslint-config-arcadia@2.2.0) (2019-09-27)
+
+
+### Bug Fixes
+
+* **no-confusing-error:** set `allowParens: false` for prettier ([6e0753f](https://github.com/salesmessage/javascript/commit/6e0753f))
+
+
+### Features
+
+* add `stylelint-config-arcadia` ([1a58275](https://github.com/salesmessage/javascript/commit/1a58275))
+
+
+
+
+
 # [2.1.0](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.0.0...eslint-config-arcadia@2.1.0) (2019-09-27)
 
 

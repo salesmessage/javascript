@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/salesmessage/javascript/compare/prettier-config-arcadia@2.0.0...prettier-config-arcadia@2.1.0) (2019-09-27)
+
+
+### Features
+
+* add `stylelint-config-arcadia` ([1a58275](https://github.com/salesmessage/javascript/commit/1a58275))
+
+
+
+
+
 # [2.0.0](https://github.com/salesmessage/javascript/compare/prettier-config-arcadia@1.0.0...prettier-config-arcadia@2.0.0) (2019-09-27)
 
 
