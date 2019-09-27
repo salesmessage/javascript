@@ -1,9 +1,9 @@
 {
-  "name": "prettier-config-arcadia",
-  "version": "2.0.0",
-  "description": "Arcadia's base Prettier config, following our code conventions",
+  "name": "stylelint-config-arcadia",
+  "version": "0.0.0",
+  "description": "Arcadia's base Stylelint config, following our code conventions",
   "keywords": [
-    "prettier",
+    "stylelint",
     "config",
     "arcadia",
     "javascript"
@@ -23,6 +23,10 @@
     "node": ">= 10.0.0"
   },
   "peerDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-prettier": "^1.1.1"
   }
 }
