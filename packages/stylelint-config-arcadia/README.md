@@ -1,22 +1,20 @@
-# `stylelint-config-arcadia`
+# stylelint-config-arcadia
 
-> Arcadia's base Stylelint config, following our code conventions
+> Arcadia's Stylelint config, following our code conventions
 
 [![npm version](https://img.shields.io/npm/v/stylelint-config-arcadia.svg)](https://www.npmjs.com/package/stylelint-config-arcadia)
 [![CircleCI](https://circleci.com/gh/salesmessage/javascript.svg?style=shield)](https://circleci.com/gh/salesmessage/javascript)
 
 ## Usage
 
+To install with all necessary `peerDependencies`, use [install-peerdeps](https://github.com/nathanhleung/install-peerdeps#usage):
+
 ```sh
-npm i -D stylelint stylelint-config-arcadia
+npx install-peerdeps --dev stylelint-config-arcadia
 ```
 
-Reference in `package.json`:
+Now you should create a `stylelint.config.js` file at the root of your project with the following:
 
-```json
-{
-    "name": "my-package",
-    "version": "1.2.3",
-    "prettier": "stylelint-config-arcadia"
-}
+```js
+module.exports = require('stylelint-config-arcadia');
 ```
