@@ -23,7 +23,7 @@ module.exports = {
     'no-confusing-arrow': [
       'error',
       {
-        allowParens: true,
+        allowParens: false,
       },
     ],
 
