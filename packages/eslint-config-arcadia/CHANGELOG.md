@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.2.1...eslint-config-arcadia@2.2.2) (2019-09-27)
+
+
+### Bug Fixes
+
+* add eslint-config-prettier peerDependency ([d51f482](https://github.com/salesmessage/javascript/commit/d51f482))
+* disable react/jsx-props-no-spreading ([725e42c](https://github.com/salesmessage/javascript/commit/725e42c))
+
+
+
+
+
 ## [2.2.1](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.2.0...eslint-config-arcadia@2.2.1) (2019-09-27)
 
 
