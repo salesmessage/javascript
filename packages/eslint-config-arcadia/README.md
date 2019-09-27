@@ -26,16 +26,6 @@ For example, in a JSON `.eslintrc`:
 
 Lint all the things, including ECMAScript 6+, React, and Prettier.
 
-If you don't need React, use [eslint-config-arcadia-base](https://npmjs.com/eslint-config-arcadia-base).
-
-### `"extends": ["arcadia", "arcadia/jest]`
-
-Jest-specific rules and environment added to the default export.
-
-### `"extends": ["arcadia", "arcadia/mocha]`
-
-Mocha-specific rules and environment added to the default export.
-
 ### `prettier` Editor Plugin Integration
 
 Unfortunately, super-useful editor plugins like `prettier-atom` and `prettier-vscode` do not load Prettier settings from ESLint config, which is where we load our Prettier options from. To workaround this, add a `.prettierrc.js` or `prettier.config.js` file to your root with the following content:
@@ -48,11 +38,3 @@ module.exports = require('prettier-config-arcadia');
 
 - [Arcadia's Prettier config](https://npmjs.com/prettier-config-arcadia)
 - [Arcadia's Javascript code conventions](https://github.com/salesmessage/javascript)
-
-## Development
-
-Consider adding test cases if you're making complicated rules changes, like anything involving regexes. Perhaps in a distant future, we could use literate programming to structure our README as test cases for our .eslintrc?
-
-You can run tests (from the repo root) with `npm test`.
-
-You can make sure this module lints with itself using `npm run lint` (from the repo root).
