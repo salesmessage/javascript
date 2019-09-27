@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@1.3.1...eslint-config-arcadia@2.0.0) (2019-09-27)
+
+
+### Features
+
+* consolidate paackages ([cca50f1](https://github.com/salesmessage/javascript/commit/cca50f1))
+
+
+### BREAKING CHANGES
+
+* Several packages were removed. The only remaining packages are `eslint-config-arcadia` and `prettier-config-arcadia`.
+
+
+
+
+
 ## [1.3.1](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@1.3.0...eslint-config-arcadia@1.3.1) (2019-09-17)
 
 **Note:** Version bump only for package eslint-config-arcadia
