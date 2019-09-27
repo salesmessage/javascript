@@ -19,9 +19,28 @@ module.exports = {
     // Prettier
     'prettier/prettier': 'error',
 
+    // Core
+    'no-confusing-arrow': [
+      'error',
+      {
+        allowParens: true,
+      },
+    ],
+
     // React
     'react/forbid-prop-types': 'off',
-    'react/jsx-filename-extension': ['error', { extensions: ['js', '.jsx'] }],
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['js', '.jsx'],
+      },
+    ],
+    'react/jsx-sort-props': [
+      'error',
+      {
+        reservedFirst: false,
+      },
+    ],
     'react/require-default-props': 'off',
   },
 };
