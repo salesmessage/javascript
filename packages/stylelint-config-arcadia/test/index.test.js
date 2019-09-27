@@ -2,7 +2,8 @@ const prettierConfig = require('../index');
 
 test('stylelint-config-arcadia', () => {
   expect(prettierConfig).toMatchObject({
-    extends: ['stylelint-prettier', 'stylelint-config-standard', 'stylelint-config-rational-order'],
+    extends: ['stylelint-config-standard', 'stylelint-config-rational-order'],
+    plugins: ['stylelint-prettier'],
     rules: {
       'prettier/prettier': true,
 
