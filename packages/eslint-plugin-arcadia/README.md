@@ -37,16 +37,6 @@ Jest-specific rules and environment added to the default export.
   },
 ```
 
-### Mocha
-
-Mocha-specific rules and environment added to the default export.
-
-```json
-  "eslintConfig": {
-    "extends": ["plugin:arcadia/recommended", "plugin:arcadia/mocha"]
-  },
-```
-
 ### Customizing Rules
 
 You can configure the rules like every other `eslint` plugin.

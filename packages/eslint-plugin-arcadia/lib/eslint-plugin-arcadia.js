@@ -2,7 +2,6 @@
 
 const { getPluginProcessors, getPluginRules } = require('./plugins');
 const jestConfig = require('./configs/jest.json');
-const mochaConfig = require('./configs/mocha.json');
 const recommendedConfig = require('./configs/recommended.json');
 
 // resolve parser to support pnpm strict linking
@@ -22,7 +21,6 @@ recommendedConfig.settings['import/resolver'] = {
 module.exports = {
   configs: {
     jest: jestConfig,
-    mocha: mochaConfig,
     recommended: recommendedConfig,
   },
   // TODO: environments

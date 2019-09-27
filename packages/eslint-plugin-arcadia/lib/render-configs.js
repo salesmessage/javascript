@@ -18,24 +18,6 @@ renderConfig('jest', { extends: ['arcadia/jest'] }, [
   '**/test/**/*.js',
 ]);
 
-renderConfig(
-  'mocha',
-  {
-    extends: ['arcadia/mocha'],
-    rules: {
-      // mocha does fancy things with test case scope,
-      // and this conflicts with mocha/no-mocha-arrow
-      'prefer-arrow-callback': 'off',
-      'func-names': 'off',
-    },
-  },
-  [
-    // prettier-ignore
-    '**/*-test.js',
-    '**/test/**/*.js',
-  ]
-);
-
 renderConfig('recommended', {
   extends: ['arcadia'],
   parser: 'babel-eslint',
