@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.2.0...eslint-config-arcadia@2.2.1) (2019-09-27)
+
+
+### Bug Fixes
+
+* include stylelint.config.js ([f9f39f1](https://github.com/salesmessage/javascript/commit/f9f39f1))
+
+
+
+
+
 # [2.2.0](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.1.0...eslint-config-arcadia@2.2.0) (2019-09-27)
 
 

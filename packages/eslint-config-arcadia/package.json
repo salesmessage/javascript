@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arcadia",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Arcadia's ESLint config, following our code conventions",
   "main": "index.js",
   "files": [
