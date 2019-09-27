@@ -35,6 +35,7 @@ module.exports = {
         extensions: ['js', '.jsx'],
       },
     ],
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-sort-props': [
       'error',
       {
