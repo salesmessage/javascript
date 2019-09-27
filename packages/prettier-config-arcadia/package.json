@@ -11,9 +11,9 @@
   "author": "Andrew Ellis <andrew@salesmessage.com>",
   "homepage": "https://github.com/salesmessage/javascript/tree/latest/packages/prettier-config-arcadia#readme",
   "license": "MIT",
-  "main": "lib/prettier-config-arcadia.js",
+  "main": "index.js",
   "files": [
-    "lib"
+    "index.js"
   ],
   "repository": {
     "type": "git",

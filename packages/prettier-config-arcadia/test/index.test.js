@@ -1,4 +1,4 @@
-const prettierConfig = require('..');
+const prettierConfig = require('../index');
 
 test('prettier-config-arcadia', () => {
   expect(prettierConfig).toMatchObject({
