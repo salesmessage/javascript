@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.2.4...eslint-config-arcadia@2.3.0) (2019-11-12)
+
+
+### Features
+
+* add eslint-plugin-simple-import-sort ([#72](https://github.com/salesmessage/javascript/issues/72)) ([9140448](https://github.com/salesmessage/javascript/commit/9140448e6a0db6fce1db14dfc2094d41faf69c09))
+
+
+
+
+
 ## [2.2.4](https://github.com/salesmessage/javascript/compare/eslint-config-arcadia@2.2.3...eslint-config-arcadia@2.2.4) (2019-09-27)
 
 
