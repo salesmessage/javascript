@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['prettier', 'react-hooks'],
+  plugins: ['prettier', 'react-hooks', 'simple-import-sort'],
   env: {
     browser: true,
     es6: true,
@@ -43,5 +43,12 @@ module.exports = {
       },
     ],
     'react/require-default-props': 'off',
+
+    // Import Sorting
+    'simple-import-sort/sort': 'error',
+    'sort-imports': 'off',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
   },
 };
